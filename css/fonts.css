@@ -1,0 +1,7 @@
+@font-face{
+    font-family: "Simplo Light Italic";
+    src: url('../fonts/Simplo-LightIt.eot');
+    src: local('Simplo Light Italic'),url('../fonts/Simplo-LightIt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
