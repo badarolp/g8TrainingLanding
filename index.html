@@ -1,64 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/actions.js"></script>        
-        <title>G8 Training</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <img src="img/logo_menu.png" class="logo">
-                <img src="img/logo_menu_branco.png" class="logo-branco">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/actions.js"></script>
+    
+    <title>G8 Training</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <img src="img/logo_menu.png" class="logo" />
+        <img src="img/logo_menu_branco.png" class="logo-branco" />
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#metodo">Método</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#depoimentos">Depoimentos</a>
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#multimidia">Multimídia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/shelltreinamentos/"><img src="img/facebook.png" alt="facebook"/></a>
+          <a href="https://www.instagram.com/shelltreinamentos/"><img src="img/instagram.png" alt="twitter"/></a>
+          <a href="https://www.youtube.com/channel/UCYsx6T_urdV7Cx6520aZsQA/"><img src="img/youtube.png" alt="youtube"/></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase"><strong>G8 Training</strong></h1>
+            <hr />
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">
+              O G8 Training vai te ensinar a usar os recursos do seu cérebro, em
+              alta performance, para o alcance de objetivos e metas. Crie novas
+              oportunidades!
+            </p>
+            <a class="btn-angle-down btn-laranja js-scroll-trigger" href="#sobre">
+              <i class="fas fa-angle-down fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Sobre nós</h2>
+            <hr class="light my-4" />
+            <p class="text-faded mb-4">
+              Lorem ipsum sociosqu tellus donec congue donec enim etiam lobortis
+              maecenas, risus turpis eleifend fusce ornare inceptos risus metus.
+              nulla feugiat morbi pellentesque egestas porta pharetra primis
+              tincidunt convallis, odio ultricies sed curabitur aliquam egestas
+              neque cras. lorem nisl sapien amet arcu interdum platea rhoncus
+              sodales pulvinar pharetra, hac nullam feugiat egestas purus ut nec
+              felis nisl metus, etiam tellus vitae mi hendrerit ut erat
+              tristique mauris. augue eget nulla torquent ad ante litora elit in
+              inceptos curae, senectus facilisis aptent nullam ornare nulla sed
+              eleifend augue sociosqu, rutrum vestibulum rutrum quisque non nibh
+              luctus suspendisse sagittis.
+            </p>
+            <a class="btn-angle-down btn-branco js-scroll-trigger" href="#metodo">
+                <i class="fas fa-angle-down fa-4x"></i>
+            </a>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section id="metodo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">O Método</h2>
+                    <hr class="my-4" />
                 </div>
             </div>
-        </nav>
-
-        <header class="masthead text-center text-white d-flex">
-            <div class="container my-auto">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <h1 class="text-uppercase">
-                            <strong>G8 Training</strong>
-                        </h1>
-                        <hr>
-                    </div>
-                    <div class="col-lg-8 mx-auto">
-                        <p class="text-faded mb-5">
-                            O G8 Training vai te ensinar a usar os resursos do seu cérebro, em alta performance, para o alcance de objetivos e metas.
-                            Crie novas oportunidades!
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-bullseye text-primary mb-3 sr-icon-1"></i>
+                        <h3 class="mb-3">Objetivo</h3>
+                        <p class="text-muted mb-0">
+                            Lorem ipsum dictumst amet torquent ligula libero vestibulum quis a libero, venenatis imperdiet
+                            sed ullamcorper vulputate litora non ultricies risus,
+                            at nisi pretium praesent lorem class lorem sollicitudin urna.
                         </p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-brain text-primary mb-3 sr-icon-2"></i>
+                        <h3 class="mb-3">Perfil</h3>
+                        <p class="text-muted mb-0">
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-calendar-alt text-primary mb-3 sr-icon-3"></i>
+                        <h3 class="mb-3">Planejamento</h3>
+                        <p class="text-muted mb-0">
+                            Nisl lacinia ornare torquent odio auctor condimentum dapibus aliquet aenean vulputate,
+                            amet tempor dolor ultricies phasellus mollis at nullam molestie ultrices eros,
+                            porttitor arcu sollicitudin donec morbi ac nunc rhoncus tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-clock text-primary mb-3 sr-icon-4"></i>
+                        <h3 class="mb-3">Gestão do Tempo</h3>
+                        <p class="text-muted mb-0">
+                            Elit eleifend eu sem vel elit pulvinar hac curabitur orci nisl,
+                            lacinia sagittis ultrices massa nisl habitant libero ornare potenti dolor,
+                            mi dictumst ac ante magna curabitur elit integer lacinia.
+                        </p>
                     </div>
                 </div>
             </div>
-        </header>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-link text-primary mb-3 sr-icon-1"></i>
+                        <h3 class="mb-3">Gestão dos Pontos Fracos</h3>
+                        <p class="text-muted mb-0">
+                            Urna quis neque tellus habitant aptent conubia viverra justo nec viverra curae potenti ut
+                            porttitor,
+                            vehicula dolor in feugiat sed nulla lobortis consequat pulvinar volutpat mauris volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-comments text-primary mb-3 sr-icon-2"></i>
+                        <h3 class="mb-3">Comunicação Pessoal</h3>
+                        <p class="text-muted mb-0">
+                            Eu at litora consectetur cursus curabitur fames vulputate sodales,
+                            blandit vulputate himenaeos nam luctus massa suspendisse volutpat sociosqu,
+                            placerat nibh cras feugiat dolor mi donec.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-eye text-primary mb-3 sr-icon-3"></i>
+                        <h3 class="mb-3">Foco</h3>
+                        <p class="text-muted mb-0">
+                            Maecenas dapibus neque class lacus lorem ut accumsan aliquam, congue id nullam quisque nam
+                            bibendum nulla,
+                            senectus leo placerat non dapibus primis ipsum. scelerisque taciti aenean cubilia bibendum leo
+                            id,
+                            libero urna et sagittis et, odio nostra vivamus adipiscing etiam.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fas fa-chart-line text-primary mb-3 sr-icon-4"></i>
+                        <h3 class="mb-3">Indicadores de Desempenho</h3>
+                        <p class="text-muted mb-0">
+                            Id torquent tristique ullamcorper consequat vivamus ut euismod,
+                            nisl tincidunt quam at eu taciti dui viverra, fusce class interdum egestas mauris mattis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <a class="btn-angle-down btn-laranja js-scroll-trigger" href="#multimidia">
+                        <i class="fas fa-angle-down fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="bg-primary" id="multimidia">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="section-heading text-white">Multimídia</h2>
+              <hr class="light my-4" />
+              <p class="text-faded mb-4">
+                
+              </p>
+              <a class="btn-angle-down btn-branco js-scroll-trigger" href="#depoimentos">
+                  <i class="fas fa-angle-down fa-4x"></i>
+              </a>
+            </div>
+          </div>        
+        </div>
+      </section>
 
+    <section id="depoimentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Depoimentos</h2>
+                    <hr class="my-4" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
 
-    </body>
+            <div class="row">
+                <div class="teste2 col-md-4 text-center">
+                    <div class="service-box mx-auto">
+                        <a class="portfolio-box">
+                            <img width="250" height="250" src="img/lazaro-ramos.jpg" class="img-fluid img-depo rounded-circle vc_single_image-img attachment-full" alt="" >
+                            <div class="portfolio-box-caption rounded-circle">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        <i class="fas fa-4x fa-play text-white mb-3 sr-icon-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="div-depoimento mx-auto">
+                        <h3 class="mb-3">Pessoa 1</h3>
+                        <p class="text-muted mb-0">
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 ">
+                    <div class="div-depoimento mx-auto">
+                        <h3 class="mb-3">Pessoa 2</h3>
+                        <p class="text-muted mb-0">
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                        </p>
+                        <button class="button button-test button3">
+                            ASSISTA AO VIDEO
+                        </button>
+                    </div>
+                </div>                
+                <div class="col-md-4 text-center">
+                    <div class="service-box mx-auto">
+                        <img width="304" height="252" src="http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia.jpg" class="vc_single_image-img attachment-full" alt="" srcset="http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia.jpg 380w, http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia-300x249.jpg 300w" sizes="(max-width: 380px) 100vw, 380px">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="service-box mx-auto">
+                        <img width="304" height="252" src="http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia.jpg" class="vc_single_image-img attachment-full" alt="" srcset="http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia.jpg 380w, http://sonatabrasil.com.br/wp-content/uploads/2018/03/foto-soraia-300x249.jpg 300w" sizes="(max-width: 380px) 100vw, 380px">
+                    </div>
+                </div>
+                <div class="col-md-8 ">
+                    <div class="div-depoimento mx-auto">
+                        <h3 class="mb-3">Pessoa 3</h3>
+                        <p class="text-muted mb-0">
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                            Conubia maecenas nunc himenaeos suspendisse sodales taciti porttitor viverra
+                            maecenas eleifend, auctor curabitur dui dolor molestie vitae neque potenti nisi.
+                        </p>
+                        <button class="button button-test button3">
+                            ASSISTA AO VIDEO
+                        </button>
+                    </div>
+                </div>
+            </div>            
+
+        </div>    
+    </section>      
+
+    <section class="bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Depoimentos | Multimídia</h2>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="..." alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+              </div>
+            </div>
+          </div>        
+    </section>    
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Contato</h2>
+                <hr class="my-4">
+                <p class="mb-5">Orçamento...</p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+                <i class="fab fa-whatsapp fa-3x mb-3 sr-contact-1"></i>
+                <p>(77)9XXXX-XXXX</p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+                <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+                <p>
+                    <a href="mailto:contato@g8training.com">contato@g8training.com</a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+  </body>
 </html>
