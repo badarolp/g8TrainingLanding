@@ -354,8 +354,8 @@
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span><b>Teste</b></span>
+                                <h3>Lazaro Ramos</h3>
+                                <span><b>Ator</b></span>
                             </div>
                         </div>
                         <h3 class="sobre-justify text-muted mb-5">
@@ -368,40 +368,39 @@
                     <div class="col-sm-4">
                         <div class="team">
                             <div class="team-img">
-                                <img class="img-responsive" src="img/lazaro-ramos.jpg" alt="">
+                                <img class="img-responsive" src="img/depoimento2.jpg" alt="">
                                 <div class="overlay">
-                                    <a href="#"><i class="teste-play fas fa-4x fa-play text-white mb-3 sr-icon-2"></i></a>
+                                    <a class="play-button" id="popup__toggle2"><i class="teste-play fas fa-4x fa-play text-white mb-3 sr-icon-2"></i></a>
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span><b>Teste</b></span>
+                                <h3>Beatriz</h3>
+                                <span><b>Profissão</b></span>
                             </div>
                         </div>
                         <h3 class="sobre-justify text-muted mb-5">
                             <b>
-                                "Maecenas dapibus neque class lacus lorem ut accumsan aliquam, congue id nullam quisque nam
-                                bibendum nulla, senectus leo placerat non dapibus primis ipsum"
+                                Após ter tentado por três anos, ela passou em medicina com a ajuda do G8!
                             </b>
-                        </h3>                  
+                        </h3>                        
                     </div>
                     <div class="col-sm-4">
                         <div class="team">
                             <div class="team-img">
-                                <img class="img-responsive" src="img/lazaro-ramos.jpg" alt="">
+                                <img class="img-responsive" src="img/depoimento1.jpg" alt="">
                                 <div class="overlay">
-                                    <a href="#"><i class="teste-play fas fa-4x fa-play text-white mb-3 sr-icon-2"></i></a>
+                                    <a class="play-button" id="popup__toggle1"><i class="teste-play fas fa-4x fa-play text-white mb-3 sr-icon-2"></i></a>
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span><b>Teste</b></span>
+                                <h3>Carla</h3>
+                                <span><b>Profissão</b></span>
                             </div>
                         </div>
                         <h3 class="sobre-justify text-muted mb-5">
                             <b>
-                                "Maecenas dapibus neque class lacus lorem ut accumsan aliquam, congue id nullam quisque nam
-                                bibendum nulla, senectus leo placerat non dapibus primis ipsum"
+                                Depois de conseguir se organizar na vida profissional, com ajuda do G8, 
+                                ela conseguiu passar no mestrado que tanto queria!
                             </b>
                         </h3>                        
                     </div>
@@ -413,6 +412,41 @@
         </div>
     </section>
 
+    <div class="popup__overlay1">
+        <div class="popup"> <a href="#" class="popup__close">X</a> https://developers.google.com/youtube/player_parameters?hl=ru
+            <br/> https://developers.google.com/youtube/iframe_api_reference?hl=ru
+        </div>
+    </div>
+    <div class="popup__overlay1">
+        <div class="popup" id="popupVid">
+            <a href="#depoimentos" class="popup__close">X</a>
+            <iframe src="https://www.youtube.com/embed/7Z7pkV4J9tQ?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="popup__overlay2">
+            <div class="popup"> <a href="#" class="popup__close">X</a> https://developers.google.com/youtube/player_parameters?hl=ru
+                <br/> https://developers.google.com/youtube/iframe_api_reference?hl=ru
+            </div>
+        </div>
+        <div class="popup__overlay2">
+            <div class="popup" id="popupVid">
+                <a href="#depoimentos" class="popup__close">X</a>
+                <iframe src="https://www.youtube.com/embed/IvrZErJZbFs?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="popup__overlay3">
+            <div class="popup"> <a href="#" class="popup__close">X</a> https://developers.google.com/youtube/player_parameters?hl=ru
+                <br/> https://developers.google.com/youtube/iframe_api_reference?hl=ru
+            </div>
+        </div>
+        <div class="popup__overlay3">
+            <div class="popup" id="popupVid">
+                <a href="#depoimentos" class="popup__close">X</a>
+                <iframe src="https://www.youtube.com/embed/7Z7pkV4J9tQ?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>    
 <!--
     <section id="depoimentos">
         <div class="container">
@@ -536,6 +570,94 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>
+    <script>
+    var p1 = $(".popup__overlay1");
+    var p2 = $(".popup__overlay2");
+    var p3 = $(".popup__overlay3");
+
+    $("#popup__toggle1").click(function() {
+        p1.css("display", "block");
+    });
+    $("#popup__toggle2").click(function() {
+        p2.css("display", "block");
+    });
+    $("#popup__toggle3").click(function() {
+        p2.css("display", "block");
+    });    
+    p1.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p1).css("display", "none");
+        }
+    });
+    p2.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p2).css("display", "none");
+        }
+    });
+    p3.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p3).css("display", "none");
+        }
+    });        
+    $(".popup__close").click(function() {
+        p1.css("display", "none");
+        p2.css("display", "none");
+        p3.css("display", "none");
+    });
+    //video popup
+    function toggleVideo(state) {
+        // if state == 'hide', hide. Else: show video
+        var div = document.getElementById("popupVid");
+        var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+        //div.style.display = state == 'hide' ? 'none' : '';
+        func = state == "hide" ? "pauseVideo" : "playVideo";
+        iframe.postMessage(
+            '{"event":"command","func":"' + func + '","args":""}',
+            "*"
+        );
+    }
+
+    $("#popup__toggle1").click(function() {
+        p1.css("visibility", "visible").css("opacity", "1");
+    });
+    $("#popup__toggle2").click(function() {
+        p2.css("visibility", "visible").css("opacity", "1");
+    });
+    $("#popup__toggle3").click(function() {
+        p3.css("visibility", "visible").css("opacity", "1");
+    });
+    p1.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p1).css("visibility", "hidden").css("opacity", "0");
+            toggleVideo("hide");
+        }
+    });
+    p2.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p2).css("visibility", "hidden").css("opacity", "0");
+            toggleVideo("hide");
+        }
+    });
+    p3.click(function(event) {
+        e = event || window.event;
+        if (e.target == this) {
+            $(p3).css("visibility", "hidden").css("opacity", "0");
+            toggleVideo("hide");
+        }
+    });        
+
+    $(".popup__close").click(function() {
+        p1.css("visibility", "hidden").css("opacity", "0");
+        p2.css("visibility", "hidden").css("opacity", "0");
+        p3.css("visibility", "hidden").css("opacity", "0");
+        toggleVideo("hide");
+    });
+    </script>
 
   </body>
 </html>
