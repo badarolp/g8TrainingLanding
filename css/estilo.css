@@ -24,14 +24,15 @@
 }
 
 .button3 {
-    background-color: white; 
-    color: #ff6a00;
-    border: 2px solid #ff6a00;
+    background-color: #ff6a00 !important;
+    color: white !important;
+    border: 2px solid white !important;
 }
   
 .button3:hover {
-    background-color: #ff6a00;
-    color: white;
+    background-color: white !important;
+    color: #ff6a00 !important;
+    border: 2px solid #ff6a00 !important;
 }
 
 .div-depoimento {

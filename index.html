@@ -435,21 +435,50 @@
     <section class="bg-primary" id="contato">
         <div class="container">
             <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading text-white">Contato</h2>
-                <hr class="light my-4">
-                <p class="mb-5 text-white">Orçamento...</p>
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="section-heading text-white">Contato</h2>
+                    <hr class="light my-4">
+                    <p class="mb-5 text-white sobre-justify">
+                        Mande suas dúvidas, sugestões ou comentários para o e-mail <b>contato@g8training.com</b>, ou se preferir, envie-nos sua mensagem 
+                        através do formulário abaixo.
+                    </p>
+                </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center">
+                        <form role="form" method="post" id="reused_form">
+                            <div class="row form-group">
+                                <p class="text-white"> Nome:</p>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="row form-group">
+                                <p class="text-white"> Email:</p>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="row form-group">
+                                <p class="text-white"> Messagem:</p>
+                                <!--<label for="message"> Messagem:</label>-->
+                                <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button type="submit" class="btn btn-lg button3 pull-right" >Enviar &rarr;</button>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
             </div>
             <div class="row">
-            <div class="col-lg-4 ml-auto text-center">
-                <i class="text-white fab fa-whatsapp fa-3x mb-3 sr-contact-1"></i>
-                <p class="text-white">(77)9XXXX-XXXX</p>
-            </div>
-            <div class="col-lg-4 mr-auto text-center">
-                <i class="text-white fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-                <p><a class="text-white" href="mailto:contato@g8training.com">contato@g8training.com</a></p>
-            </div>
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="text-white fab fa-whatsapp fa-3x mb-3 sr-contact-1"></i>
+                    <p class="text-white">(77)9XXXX-XXXX</p>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="text-white fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+                    <p><a class="text-white" href="mailto:contato@g8training.com">contato@g8training.com</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -465,6 +494,8 @@
             </div>	
         </div>
     </section>
+
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.js"></script>
