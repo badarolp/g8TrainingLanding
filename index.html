@@ -333,38 +333,33 @@
                     </p>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 mx-auto text-center">
-                        <form role="form" method="post" id="reused_form">
-                            <div class="row form-group">
-                                <p> Nome:</p>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="row form-group">
-                                <p> Email:</p>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="row form-group">
-                                <p> Messagem:</p>
-                                <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <button type="submit" class="btn btn-lg button3 pull-right" >Enviar &rarr;</button>
-                                </div>
-                            </div>
-                        </form>                        
-                    </div>
-                </div>
-            </div>
-        </br>
+        </dib>
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12 ml-auto text-center">
-                    <i class="text-primary fab fa-whatsapp fa-3x mb-3 sr-contact-1"></i>
-                    <p>(77)9XXXX-XXXX</p>
+                <div class="col-lg-6 mx-auto text-center">
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row form-group">
+                            <p> Nome:</p>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="row form-group">
+                            <p> Email:</p>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="row form-group">
+                            <p> Messagem:</p>
+                            <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg button3 pull-right" >Enviar &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sua mensagem foi enviada com sucesso!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Erro</h3> Aconteceu algum problema ao enviar sua mensagem. </div>
                 </div>
-                
             </div>
         </div>
     </section>

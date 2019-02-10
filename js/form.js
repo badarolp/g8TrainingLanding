@@ -47,13 +47,13 @@ $(function()
             $btn = $(this);
             $btn.prop('type','button' ); 
             $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
+            $btn.text('Enviando ...');
         });
         
 
                     $.ajax({
                 type: "POST",
-                url: 'handler.php',
+                url: '../handler.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
