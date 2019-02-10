@@ -2,27 +2,6 @@
     text-align: justify;
 }
 
-.img-depo {
-    background-color: white; 
-    color: #ff6a00;
-    border: 7px solid #ff6a00;
-}
-
-.button-test {
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
 .button3 {
     background-color: #ff6a00 !important;
     color: white !important;
@@ -33,11 +12,6 @@
     background-color: white !important;
     color: #ff6a00 !important;
     border: 2px solid #ff6a00 !important;
-}
-
-.div-depoimento {
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 body,
@@ -89,10 +63,6 @@ h6 {
 
 .bg-primary {
   background-color: #ff6a00 !important;
-}
-
-.bg-dark {
-  background-color: #212529 !important;
 }
 
 .text-faded {
@@ -621,3 +591,6 @@ a.play-button {
     margin-bottom: 10px;
     }
 }
+
+
+
