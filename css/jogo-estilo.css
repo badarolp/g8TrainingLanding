@@ -1,3 +1,10 @@
+.quadrantes {
+    background-image:
+        linear-gradient(red 4px, transparent 4px),
+        linear-gradient(90deg, red 4px, transparent 4px);
+    background-size: 490px 490px, 490px 490px, 10px 0px, 0px 0px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
@@ -34,8 +41,25 @@
 }
 
 #player {
-    height: 350px;
-    font-size: 200px;
+    height: 200px;
+    font-size: 120px;
     cursor: pointer;
     text-align: center;
+}
+
+#botao {
+    font-size: 180px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button {
+    background-color: #87CEFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100px;
 }

@@ -37,6 +37,7 @@ var quadrante4 = [
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
+var mostrar_quadrantes = false;
 
 var proximo_card = '01';
 
@@ -219,5 +220,13 @@ function memoryFlipTile2(tile, value) {
                 cardsDoNotMatch();
             }
         }
+    }
+}
+
+function mostrar() {
+    if (document.getElementById("memory_board").classList.contains('quadrantes')) {
+        document.getElementById("memory_board").classList.toggle('quadrantes');
+    } else {
+        document.getElementById("memory_board").classList.add('quadrantes');
     }
 }
