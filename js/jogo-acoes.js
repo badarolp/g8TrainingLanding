@@ -161,7 +161,7 @@ function flipCard(tile, value) {
         } else if (value == "100") {
             alert(":)")
         }
-
+        document.getElementById('player').innerHTML = value;
     }
 }
 

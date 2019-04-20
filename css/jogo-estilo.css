@@ -35,4 +35,7 @@
 
 #player {
     height: 350px;
+    font-size: 200px;
+    cursor: pointer;
+    text-align: center;
 }
